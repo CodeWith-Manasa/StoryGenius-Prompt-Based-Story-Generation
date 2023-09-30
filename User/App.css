@@ -1,0 +1,204 @@
+.App {
+  text-align: center;
+  display: flex;
+  background-color: #282c34;
+  color: white;
+  position: absolute;
+  top:7.3%;bottom: 0%;left:0%;right: 0%;
+}
+.boarder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.card-body{
+  background-color: #343541;
+
+}
+.copy-button{
+  
+  margin-left: 25px;
+  border: none;
+  border-radius: 5%;
+ 
+}
+.card{
+  width:900px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.upvote{
+ margin-left: 90%;
+}
+
+.upvote1{
+  margin-left: 92%;
+
+}
+.sidemenu{
+  width: 320px;
+  height: 60px;
+  display: flex;
+  background-color: #202123;
+}
+
+.leader{
+  text-decoration: none;
+}
+  
+
+.chatbox{
+  flex:1;
+  border:1px solid rgb(7, 7, 7);
+  background-color: #343541;
+  position: relative;
+  flex-direction: row-reverse;
+}
+.side-menu-button{
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 5%;
+  transition: ease 0.5 all;
+  width:350px;
+}
+
+.side-menu-button span{
+  padding-left: 12px;
+  padding-right:12px;
+  font-size: large;
+}
+
+.side-menu-button:hover{
+  background-color: rgba(255,255,255,0.1);
+}
+
+.chat-input{
+  position: absolute;
+  padding: 24px;
+  left:0%;right: 0%;bottom: 0%;
+}
+.chat-text-area{
+width:80%;
+background-color: #40414f;
+color: white;
+border: none;
+padding: 12px;
+border-radius: 5px;
+box-shadow: 0 8px 4px 0 rgba(0,0,0,0.5);
+font-size: 1.25em;
+}
+
+.chatlog{
+  padding: 24px;
+  text-align: left;
+  padding-left: 6px;
+  padding-right: 6px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-grow: 1; /* Allow the chat log to grow and take available space */
+  max-height: calc(100% - 80px); /* Set a maximum height, leaving space for the chat input */
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* Style the scrollbar track and thumb */
+.chatlog::-webkit-scrollbar {
+  width: 6px; /* Set the scrollbar width */
+}
+
+.chatlog::-webkit-scrollbar-track {
+  background: transparent; /* Set the track background color */
+}
+
+.chatlog::-webkit-scrollbar-thumb {
+  background-color:  #343541; /* Set the thumb background color */
+  border-radius: 3px; /* Round the thumb corners */
+}
+/* CSS for Chat Messages */
+.chat-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 5px; /* Add some margin between messages */
+  padding: 5px; /* Add padding to each message */
+}
+
+
+.message-text {
+  background-color: #40414f;
+color: white;
+border: none;
+padding: 6px;
+border-radius: 5px;
+box-shadow: 0 8px 4px 0 rgba(0,0,0,0.5);
+font-size: 1.25em;
+}
+/* CSS for Chat Messages */
+.chat-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px; 
+  padding: 10px; 
+  max-width: 1000%; 
+  border-radius: 15px; 
+}
+.message-user {
+  font-weight: bold; 
+  margin-bottom: 2px; 
+  color: #3700ff; 
+  background-color: antiquewhite;
+  border: 1px solid rgb(14, 14, 14);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.message-gpt {
+  font-weight: bold; 
+  margin-bottom: 2px; 
+  color: #ff00d0;
+  background-color: rgb(237, 234, 230);
+  border: 1px solid rgb(14, 14, 14);
+  border-radius: 70%;
+  padding: 8px;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
